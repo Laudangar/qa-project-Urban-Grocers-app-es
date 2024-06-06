@@ -7,20 +7,14 @@ def get_docs():
     return requests.get(configuration.URL_SERVICES + configuration.DOCS_PATH)
 
 
-
-
 # Solicitud para que devuelve la respuesta con los registros por defecto
 def get_logs():
     return requests.get(configuration.URL_SERVICES + configuration.LOG_MAIN_PATH)
 
 
-
-
 # Solicitud para que devuelve la respuesta con los datos de la tabla de la base de datos denominada "user"
 def get_users_table():
     return requests.get(configuration.URL_SERVICES + configuration.USERS_TABLE_PATH)
-
-
 
 
 # Solicitud para dar el token para la creación del user
@@ -37,8 +31,6 @@ def get_kit_table():
     return requests.get(configuration.URL_SERVICES + configuration.KIT_TABLE_PATH)
 
 
-
-
 # Solicitud para la creación del user
 def post_new_user(body):
     return requests.post(configuration.URL_SERVICES + configuration.CREATE_USER_PATH,
@@ -46,15 +38,11 @@ def post_new_user(body):
                          headers=data.headers)
 
 
-
-
 # solicitud Post para buscar los kits por sus productos
 def post_products_kits(products_ids):
     return requests.post(configuration.URL_SERVICES + configuration.PRODUCTS_KITS_PATH,
                          json=products_ids,
                          headers=data.headers)
-
-
 
 
 # Solicitud Post para la creación del kit
