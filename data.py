@@ -12,6 +12,10 @@ product_ids = {
     "ids": [1, 2, 3]
 }
 
+kit_headers = {
+    "Content-Type": "application/json"
+}
+
 kit_body = {
         "name": "Mi conjunto",
         "card": {
